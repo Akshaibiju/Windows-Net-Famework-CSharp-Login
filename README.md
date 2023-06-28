@@ -4,7 +4,7 @@ To give the value of a TextBox to a public class variable and provide access to 
 
 Create a public class: Create a new public class in your project to hold the shared data. This class will have a public variable to store the TextBox value.
 
-```
+```csharp
 public class SharedData
 {
     public static string TextBoxValue { get; set; }
@@ -18,7 +18,7 @@ Handle Button Click Event: Double-click on the button to generate a click event 
 
 Inside the Button Click Event Handler: Assign the TextBox value to the public variable in the SharedData class.
 
-```
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
     SharedData.TextBoxValue = textBox1.Text;
@@ -34,7 +34,7 @@ Handle Button Click Event: Double-click on the button to generate a click event 
 
 Inside the Button Click Event Handler: Access the TextBox value from the SharedData class.
 
-```
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
     string textBoxValue = SharedData.TextBoxValue;
